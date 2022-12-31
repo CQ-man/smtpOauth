@@ -1,7 +1,8 @@
 # smtpOauth 
-* 基于Python语言的smtp Oauth 连接China Office 365(或21V O365)的邮箱
+* 基于Python语言的smtp Oauth 连接China Office 365(或21V O365)的邮箱  
 #Pyhton代码示例
-  import requests
+```Python
+import requests
 import smtplib
 import base64
 
@@ -53,4 +54,5 @@ try:
     print("邮件发送成功")
 except smtplib.SMTPException as e:
     print("邮件发送失败", e)
+```
 
