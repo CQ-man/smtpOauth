@@ -19,7 +19,7 @@ data = {
     'username': username,
     'password': password,
     'scope': 'https://partner.outlook.cn/.default',
-    'client_secret': 'XXXX',
+    'client_secret': 'your client secret',
 }
 res = requests.post(url, data=data)
 print("请求响应结果", res)
