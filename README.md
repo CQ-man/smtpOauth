@@ -27,7 +27,7 @@ token = res.json().get('access_token')
 print("访问令牌", token)
 
 # 将username和token组合成SASL XOAUTH2 format
-#对于Microsoft 365（或office 365）必须将 `^A`替换为``\x01`` ``\\x``转换为``%``
+#对于Microsoft 365（或office 365）必须将 `` `^A` ``替换为`` `\x01` ``
 xoauth = "user=%s\x01auth=Bearer %s\x01\x01" % (username, token)
 print("XOAUTH2格式", xoauth)
 
